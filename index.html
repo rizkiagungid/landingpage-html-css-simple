@@ -8,23 +8,47 @@
     <title>rizkiagungid | Landingpage simple V.1</title>
 </head>
 <body>
-    <section>
+    <section id="home">
         <div class="container">
         <div class="navwrapper">
             <ul class="navigation">
                 <li class="nav">
-                    <a href="" class="navlink">Home</a>
+                    <a href="#home" class="navlink">Home</a>
                 </li>
                 <li class="nav">
-                    <a href="" class="navlink">About</a>
+                    <a href="#about" class="navlink">About</a>
                 </li>
                 <li class="nav">
-                    <a href="" class="navlink">Contact</a>
+                    <a href="#contact" class="navlink">Contact</a>
                 </li>
             </ul>
         </div>
+        <di-v class="contentwrapper">
+            <h1>HOME</h1></di-v>
     </section>
-</div>
 
+    <section id="contact">
+        <div class="container blue">
+            <div class="contentwrapper">
+<h1>Contact</h1>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <div class="container red">
+            <div class="contentwrapper">
+<h1>About</h1>
+            </div>
+        </div>
+    </section>
+<div class="top" onclick="goToTop()">⬆</div>
+<script>
+const goToTop = () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+}
+</script>
 </body>
 </html>
